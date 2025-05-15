@@ -121,7 +121,7 @@ button:hover::before, select:hover::before {
     box-shadow: rgba(0, 0, 0, 0.5) 0px -2px 10px;
     margin: 5px;
     height: 800px;
-    overflow: hidden;
+    overflow-y: scroll;
 }
 
 body > svg {
@@ -236,6 +236,7 @@ span.text-button > svg {
     /* flex-basis: 100%; */
     text-align: left;
     color: white;
+    width: 100%;
 }
 
 .prop-grid {
@@ -393,4 +394,35 @@ div#path-display {
     margin-top: 10px;
     margin-bottom: 5px;
     align-items: center;
+}
+
+.pair {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border-bottom: 1px solid grey;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.pair span {
+    text-wrap-mode: wrap;
+    flex-basis: 50%;
+}
+
+.pair div {
+    flex-basis: 50%;
+}
+
+.img-vert {
+    display: flex;
+    flex-direction: column;
+}
+
+.img-vert img {
+    max-width: 30%;
+}
+
+.card span {
+    margin: 10px;
 }
