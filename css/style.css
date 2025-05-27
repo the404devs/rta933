@@ -426,3 +426,12 @@ div#path-display {
 .card span {
     margin: 10px;
 }
+
+img {
+    cursor: pointer;
+    transition: 0.2s ease all;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
